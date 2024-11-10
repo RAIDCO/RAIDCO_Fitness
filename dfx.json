@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "fit_backend": {
+      "main": "src/fit_backend/main.mo",
+      "type": "motoko"
+    },
+    "fit_frontend": {
+      "dependencies": [
+        "fit_backend"
+      ],
+      "source": [
+        "src/fit_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "fit_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
